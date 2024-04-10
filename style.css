@@ -1,0 +1,202 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #383838;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+#game-container {
+    text-align: center;
+    background-color: #5e5e5e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 20px auto; 
+    transition: background-color 0.5s ease-in-out;
+}
+
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(45deg, #1caf39, #007d72);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: font-size 0.5s, color 0.5s;
+}
+
+.title:hover {
+    font-size: 52px;
+    background: linear-gradient(45deg, #007d72, #1caf39);
+    color: #444444;
+}
+
+
+#intro-container {
+    padding: 20px;
+    background-color: #5e5e5e;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: background-color 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.intro-text {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#start-button {
+    display: inline-block;
+    background-color: #1caf39;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s, box-shadow 0.3s;
+}
+
+#start-button:hover {
+    background-color: #474747;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.question-heading {
+    color: #1caf39;
+    font-size: 24px;
+    margin-top: 20px;
+    transition: color 0.5s;
+}
+
+.question {
+    color: #333;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.answer-button {
+    display: inline-block;
+    background-color: #1caf39;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s, box-shadow 0.3s;
+}
+
+.answer-button:hover {
+    background-color: #474747;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+#score {
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+}
+
+#score img {
+    width: 21px;
+    height: 21px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+#seed-count {
+    font-size: 24px;
+    color: #1caf39;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: font-size 0.5s, color 0.5s;
+}
+
+#score:hover #seed-count {
+    font-size: 28px;
+    color: #007d72;
+    transform: scale(1.1);
+    transition: font-size 0.5s, color 0.5s, transform 0.5s; 
+}
+
+#player-name-input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#player-name-input:focus {
+    border-color: #007bff;
+}
+
+
+
+.button-style {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    background-color: #1caf39;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s, box-shadow 0.3s;
+}
+
+.button-style:hover {
+    background-color: #474747;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.win-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #009688;
+    margin-bottom: 10px;
+    transition: color 0.5s;
+}
+
+.win-image {
+    max-width: 100%;
+    margin-top: 10px;
+    transition: transform 0.5s;
+}
